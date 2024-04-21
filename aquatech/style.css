@@ -1,9 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-sizing: border-box;
+  font-family: Verdana;
   background-color: black;
+}
+
+.header {
+  border-bottom: 3px solid #32b9cd;
 }
 
 .container {
@@ -12,33 +15,158 @@ body {
   margin: auto;
 }
 
-.titulo {
-  color: #32b9cd;
-}
-
-header {
-  border-bottom: 3px solid #32b9cd;
-}
-
-header .container {
+.header .container {
   justify-content: space-between;
 }
 
+.titulo {
+  color: #32b9cd;
+  width: fit-content;
+  font-weight: 500;
+}
+
 .navbar {
-  width: 300px;
   display: flex;
-  flex-direction: row;
-  text-decoration: none;
   list-style: none;
+  width: 300px;
   justify-content: space-between;
   color: #e3b062;
   align-items: center;
 }
-.navbar li {
-  transition: 0.5s;
+
+.banner {
+  padding: 40px 0;
+  color: white;
+  height: 400px;
+  background-image: url("imagens/bg-jelly-fish-para_outras_pags.png");
 }
 
-.navbar li:hover {
+.banner .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.banner .container p {
+  font-size: 36px;
+  width: 25%;
+  text-align: center;
+}
+
+.banner .container p span {
+  font-weight: bold;
+}
+
+.social {
+  background-color: white;
+  padding: 50px 0;
+}
+
+.social .container {
+  justify-content: space-between;
+}
+
+.cardIndex {
+  width: 300px;
+  text-align: center;
+}
+
+.cardIndex img {
+  width: 100px;
+}
+
+.cardIndex h4 {
+  font-size: 20px;
+}
+
+.footer {
+  height: 100px;
+  background-color: #32b9cd;
+}
+
+.footer .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer .container p {
+  font-weight: bold;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.login .container {
+  justify-content: center;
+  align-items: center;
+  background-image: url("imagens/bg-jelly-fish-para_outras_pags.png");
+  background-size: cover;
+  height: 75vh;
+}
+
+.cardRegLogin {
+  background: white;
+  width: 400px;
+  height: 450px;
+  color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #eee;
+}
+
+.cardRegLogin h1 {
+  color: palevioletred;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.formulario span {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.formulario input {
+  padding: 10px 15px;
+  text-align: center;
+  border: 2px solid rgb(82, 143, 196);
+  border-radius: 10px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.formulario button {
+  margin-top: 10px;
+  background: #e1374e;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 120px;
+  align-self: center;
   cursor: pointer;
+}
+
+.header .agora {
+  font-weight: bold;
   color: #32b9cd;
+}
+
+.header a {
+  text-decoration: none;
+  color: #e3b062;
 }
